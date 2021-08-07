@@ -26,6 +26,13 @@ mp_V_plus["w"] = "1";
 mp_V_plus["W"] = "0";
 
 
+document.getElementById("clear").addEventListener("click", refresh)
+
+function refresh()
+{
+    window.location.reload()
+}
+
 draggableElements.forEach(elem => {
     elem.addEventListener("dragstart", dragStart); // Fires as soon as the user starts dragging an item - This is where we can define the drag data
     // elem.addEventListener("drag", drag); // Fires when a dragged item (element or text selection) is dragged

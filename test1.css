@@ -4,14 +4,29 @@
     box-sizing: border-box;
     font-size: 12px;
 }
+.toolbox{
 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px 0px 15px 60px;
+    font-size:25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+.clear{
+    height: 40px;
+    width: 100px;
+    margin-left: 50px;
+}
 .draggable-elements {
     padding: 5em;
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 1em;
-    cursor: move;
+    /* cursor: move; */
     background-color:rgb(215, 188, 243);
     
     margin-bottom: 50px;
@@ -25,6 +40,9 @@
     width: 50px;
     margin: 2px;
     border: 1px solid black;
+
+    cursor: move;
+
 }
 
 .row {
