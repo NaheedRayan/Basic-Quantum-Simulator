@@ -491,6 +491,12 @@ function run_script() {
 
             }
         }
+        else if (matrix[i][j] == "NOT") {
+            if (state == "1")
+                crawl(i, j + 1, "0", 1);
+            else
+                crawl(i, j + 1, "1", 1);
+        }
 
 
     }
