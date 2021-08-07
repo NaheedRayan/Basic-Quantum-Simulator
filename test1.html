@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="test1.css">
+
+</head>
+
+<body>
+
+    <!-- <script>
+        console.log("hello")
+        var  img = document.createElement(' img');
+         img.innerHTML = `< img class = "row" id="r0"></ img>`
+
+        document.body.appendChild( img);
+
+        for( i = 0 ; i < 10 ;i++)
+        {
+            document.getElementById("r0").innerHTML += `< img class="matrix_box" id= "c${i}"></ img>`
+            // document.body.appendChild( img);
+
+        }
+      
+    </script> -->
+
+    <section class="draggable-elements">
+        <img src="V.png" class="draggable" draggable="true" style="color: #ff6384;" id="V">
+        <img src="V+.png" class="draggable" draggable="true" style="color: #36a2eb;" id="V+">
+        <img src="CNOT.png" class="draggable" draggable="true" style="color: #ffce56;" id="CNOT">
+        <img src="NOT.png" class="draggable" draggable="true" style="color: #9966ff;" id="NOT">
+        <img src="up.png" class="draggable" draggable="true" style="color: #9966ff;" id="up">
+        <img src="down.png" class="draggable" draggable="true" style="color: #9966ff;" id="down">
+
+        <!-- <i class="fas fa-horse draggable" draggable="true" style="color: #333333;" id="horse"></i>
+        <i class="fas fa-hippo draggable" draggable="true" style="color: #ff9f40;" id="hippo"></i>
+        <i class="fas fa-spider draggable" draggable="true" style="color: #ff99cc;" id="spider"></i> -->
+    </section>
+
+    <div class="row" id="r0">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-0-c-0">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-1">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-2">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-3">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-4">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-5">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-6">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-7">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-8">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-9">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-10">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-11">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-12">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-13">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-14">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-15">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-16">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-0-c-17">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-0-c-18">
+    </div>
+
+    <div class="row" id="r1">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-1-c-0">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-1">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-2">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-3">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-4">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-5">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-6">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-7">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-8">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-9">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-10">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-11">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-12">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-13">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-14">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-15">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-16">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-1-c-17">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-1-c-18">
+    </div>
+
+    <div class="row" id="r2">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-2-c-0">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-1">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-2">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-3">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-4">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-5">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-6">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-7">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-8">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-9">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-10">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-11">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-12">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-13">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-14">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-15">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-16">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-2-c-17">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-2-c-18">
+    </div>
+
+    <div class="row" id="r3">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-3-c-0">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-1">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-2">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-3">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-4">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-5">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-6">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-7">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-8">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-9">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-10">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-11">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-12">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-13">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-14">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-15">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-16">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-3-c-17">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-3-c-18">
+    </div>
+
+    <div class="row" id="r4">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-4-c-0">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-1">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-2">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-3">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-4">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-5">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-6">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-7">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-8">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-9">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-10">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-11">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-12">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-13">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-14">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-15">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-16">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-4-c-17">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-4-c-18">
+    </div>
+
+    <div class="row" id="r5">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-5-c-0">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-1">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-2">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-3">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-4">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-5">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-6">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-7">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-8">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-9">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-10">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-11">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-12">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-13">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-14">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-15">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-16">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-5-c-17">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-5-c-18">
+    </div>
+
+    <div class="row" id="r6">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-6-c-0">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-1">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-2">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-3">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-4">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-5">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-6">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-7">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-8">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-9">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-10">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-11">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-12">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-13">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-14">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-15">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-16">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-6-c-17">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-6-c-18">
+    </div>
+
+    <div class="row" id="r7">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-7-c-0">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-1">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-2">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-3">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-4">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-5">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-6">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-7">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-8">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-9">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-10">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-11">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-12">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-13">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-14">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-15">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-16">
+        <img src="single_path_line.png" data-variable="" class="matrix_box" id="r-7-c-17">
+        <img src="zero.png" data-variable="0" class="matrix_box" id="r-7-c-18">
+    </div>
+
+</body>
+
+<script src="test1.js"></script>
+
+</html>

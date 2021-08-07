@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.draggable-elements {
+    padding: 5em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1em;
+    cursor: move;
+    background-color:rgb(215, 188, 243);
+    
+    margin-bottom: 50px;
+}
+
+.draggable{
+
+    display: grid;
+    place-items: center;
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+    border: 1px solid black;
+}
+
+.row {
+    /* height: 100px; */
+    display: flex;
+    justify-content:left;
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.matrix_box {
+    height: 50px;
+    width: 50px;
+    
+    display: grid;
+    place-items: center;
+    font-weight: 1000;
+    
+
+    /* border: 1px solid rgb(199, 241, 255); */
+
+}
